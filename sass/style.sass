@@ -1,0 +1,83 @@
+
+.container
+    display: flex
+    flex-flow: column
+    align-items: center
+    background-color: #151414
+    .hello-block
+        margin: 10px
+        padding: 10px
+        max-width: 360px
+        display: flex
+        flex-flow: column
+        align-items: center
+        box-sizing: border-box
+        border: 1px solid#151414
+        border-radius: 5px
+        box-shadow: 0 0 3px #151414 inset
+        color: #fff
+        background-color: #000
+        .title
+            display: flex
+            justify-content: center
+            text-align: center
+            margin: 10px
+        .describe
+            margin: 10px
+            text-align: center
+            display: flex
+            flex-flow: column
+            .about-me
+            .hello-text
+            .lets-go
+    .content
+        margin: 10px
+        max-width: 60%
+        font-size: 0
+        display: flex
+        justify-content: space-around
+        flex-flow: row wrap
+        .card::nth-child(even)
+            margin-right: 0
+            box-sizing: border-box
+        .card
+            width: 45%
+            margin: 0 0 30px 0
+            padding: 45px 45px
+            background-color: #ccc
+            display: flex
+            flex-flow: column
+            border-radius: 3px
+            box-sizing: border-box
+            box-shadow: 0px 0px 5px #b9b5b5 inset
+            &:hover
+                border-radius: 3px
+                box-shadow: 0px 0px 5px #b9b5b5 inset, 0px 0px 5px #ccc
+                box-sizing: border-box
+            .project-link
+                width: 40%
+            .card-image
+                width: 100%
+                border-radius: 3px
+                &:hover
+                    box-shadow: 0px 0px 5px #ccc
+                    box-sizing: border-box
+                    opacity: 0.8
+            .card-title
+                font-size: 24px
+                font-weight: 500
+                font-family: 'Inter', sans-serif
+                box-sizing: border-box
+                border-top: 1px solid #000000
+                padding: 5px 0 0 0
+                margin-bottom: 0
+            .card-text,
+            .git-link
+                font-size: 16px
+                font-family: 'Inter', sans-serif
+            .git-link
+                text-decoration: none
+                color: #000000
+                &-img
+                    &:hover
+                        fill: #1f1e1e
