@@ -1,9 +1,7 @@
 [
   {
-    "name":"iQulator",
-    "img":"./img/calculator.png"
+    "name": "iQulator",
+    "img": "./img/calculator.png"
   },
-  {
-    
-  }
+  {}
 ]
