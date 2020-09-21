@@ -36,12 +36,13 @@
         font-size: 0
         display: flex
         justify-content: space-around
-        flex-flow: row wrap
+        flex-wrap: wrap
         .card::nth-child(even)
             margin-right: 0
             box-sizing: border-box
         .card
-            width: 45%
+            max-width: 360px
+            min-width: 300px
             margin: 0 0 30px 0
             padding: 45px 45px
             background-color: #ccc
@@ -76,6 +77,7 @@
                 font-size: 16px
                 font-family: 'Inter', sans-serif
             .git-link
+                width: 36px
                 text-decoration: none
                 color: #000000
                 &-img
