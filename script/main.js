@@ -38,7 +38,7 @@ class ContentItem {
 			{
 				name: "iQulator",
 				img: `./img/calculator.png`,
-				projectLink: `https://ipoluhin.github.io/jQulator/index.html`,
+				projectLink: `https://ipoluhin.github.io/jQulator/`,
 				sourceLink: `https://github.com/ipoluhin/jQulator`,
 				cardText: `jQulator - веб-калькулятор. Калькулятор способен считать неограниченное
 						количество операций до вывода результирующих данных. В целом, попытка
@@ -48,29 +48,29 @@ class ContentItem {
 			{
 				name: "Одностраничник",
 				img: `./img/singlepage.png`,
-				projectLink: `https://github.com/ipoluhin/singlepage-template/index.html`,
-				sourceLink: `https://github.com/ipoluhin/singlepage-template`,
+				projectLink: `https://ipoluhin.github.io/singlepage-template/`,
+				sourceLink: `https://github.com/ipoluhin/singlepage-template/`,
 				cardText: `Основы семантики, отзывчивая адаптивность. `
 			},
 			{
 				name: "Магазин интерьера",
 				img: `./img/interiorshop.png`,
-				projectLink: `https://ipoluhin.github.io/InteriorShop/index.html`,
-				sourceLink: `https://ipoluhin.github.io/InteriorShop/`,
+				projectLink: `https://ipoluhin.github.io/InteriorShop/`,
+				sourceLink: `https://github.com/ipoluhin/InteriorShop/`,
 				cardText: `Учебная работа по курсу основы верстки по макету.`
 			},
 			{
 				name: "Работа по теме 'HTML5-CSS3'",
 				img: `./img/html5-css3.png`,
-				projectLink: `https://ipoluhin.github.io/html5-css3/index.html`,
-				sourceLink: `https://ipoluhin.github.io/html5-css3/`,
+				projectLink: `https://ipoluhin.github.io/html5-css3/`,
+				sourceLink: `https://github.com/ipoluhin/html5-css3/`,
 				cardText: `Работа по курсу 'HTML5-CSS3' (с применением семантики и немного адаптивности)`
 			},
 			{
 				name: "Промо магазин",
 				img: `./img/cat-bask-search.png`,
-				projectLink: `https://ipoluhin.github.io/js1-hw-Dm_Zaitsev/index.html`,
-				sourceLink: `https://ipoluhin.github.io/js1-hw-Dm_Zaitsev/`,
+				projectLink: `https://ipoluhin.github.io/js1-hw-Dm_Zaitsev/`,
+				sourceLink: `https://github.com/ipoluhin/js1-hw-Dm_Zaitsev/`,
 				cardText: `Результат курса Основы Java Script. Применены классы, 
 				шаблонные строки, фильтрация в поиске с помощью регулярок, 
 				работа с fetch. index.html подгружается единожды. 
