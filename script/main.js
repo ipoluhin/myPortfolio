@@ -35,7 +35,7 @@ class ContentItem {
 		this.sourceLink = sourceLink;
 		this.api = api;
 		this.projects = [
-			{
+			/* {
 				name: "iQulator",
 				img: `./img/calculator.png`,
 				projectLink: `https://ipoluhin.github.io/jQulator/`,
@@ -75,23 +75,26 @@ class ContentItem {
 				шаблонные строки, фильтрация в поиске с помощью регулярок, 
 				работа с fetch. index.html подгружается единожды. 
 				Все манипуляции за счет работы с DOM силами javascript.`
-			},
+			}, */
 		];
 		this.init();
 	}
-	/* init() {
+	init() {
 		fetch(`${this.api}projects.json`)
 			.then(result => result.json())
 			.then(data => {
-				this.projects = [...data];
-				this.render(data);
+				$('.hello-block').on('click', () => {
+					$('.hello-block').fadeToggle(200);
+					this.projects = [...data];
+					this.render(this.projects);
+				})
+			});
+		/* init() {
+			$('.hello-block').on('click', () => {
+				$('.hello-block').fadeToggle(200);
+				this.render(this.projects);
 			})
-	} */
-	init() {
-		$('.hello-block').on('click', () => {
-			$('.hello-block').fadeToggle(200);
-			this.render(this.projects);
-		})
+		} */
 	}
 	render(data) {
 		data.forEach((item) => {
