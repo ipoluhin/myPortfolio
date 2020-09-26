@@ -11,6 +11,7 @@ body {
 }
 
 .container .hello-block {
+  width: 400px;
   margin: 10px;
   padding: 10px;
   max-width: 360px;
@@ -21,9 +22,14 @@ body {
   border: 1px solid #151414;
   border-radius: 5px;
   box-shadow: 0 0 3px #151414 inset;
-  color: #fff;
-  background-color: #000;
+  background-color: #ccc;
   position: absolute;
+}
+
+.container .hello-block .autor-img {
+  width: 180px;
+  box-sizing: border-box;
+  border-radius: 50%;
 }
 
 .container .hello-block .title {
@@ -38,6 +44,10 @@ body {
   text-align: center;
   display: flex;
   flex-flow: column;
+}
+
+.container .hello-block .describe .hello-text {
+  color: #000000;
 }
 
 .container .content {

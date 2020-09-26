@@ -8,9 +8,9 @@ class Autor {
 	render() {
 		$('.container').html(`
 		<section class="hello-block">
-				<!-- <img src=${this.img} alt="autor" name="autor" /> -->
-				<span class="title">Доброго времени!</span>
+				<!-- <img src=${this.img} class="autor-img" alt="autor" name="autor" />-->				
 				<section class="describe">
+				<span class="title">Доброго времени!</span>
 					<span class="hello-text">
 						Меня зовут Илья. Я начинающий фронтенд - разработчик.</span
 					>
@@ -38,7 +38,8 @@ class ContentItem {
 		this.init();
 	}
 	init() {
-		fetch(`${this.api}projects.json`)
+		fetch('https://raw.githubusercontent.com/ipoluhin/myPortfolio/master/json/projects.json')
+			/* fetch(`${this.api}projects.json`) */
 			.then(result => result.json())
 			.then(data => {
 				$('.hello-block').on('click', () => {
@@ -47,12 +48,6 @@ class ContentItem {
 					this.render(this.projects);
 				})
 			});
-		/* init() {
-			$('.hello-block').on('click', () => {
-				$('.hello-block').fadeToggle(200);
-				this.render(this.projects);
-			})
-		} */
 	}
 	render(data) {
 		data.forEach((item) => {
