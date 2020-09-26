@@ -8,9 +8,9 @@ class Autor {
 	render() {
 		$('.container').html(`
 		<section class="hello-block">
-				<!-- <img src=${this.img} class="autor-img" alt="autor" name="autor" />-->				
+				<!-- <img src=${this.img} class="autor-img" alt="autor" name="autor" /> -->				
 				<section class="describe">
-				<span class="title">Доброго времени!</span>
+					<span class="title">Доброго времени!</span><hr>
 					<span class="hello-text">
 						Меня зовут Илья. Я начинающий фронтенд - разработчик.</span
 					>
@@ -18,10 +18,9 @@ class Autor {
 						Представленные работы созданы в рамках обучения. Ссылка на репозитории с
 						конкретной работой, а также публичная ссылка указаны в описании к работе.
 					</p>
-					<span class="lets-go">Приятного просмотра!</span>
 				</section>
 			</section>
-			<section class="content"></section>
+		<section class="content"><!-- Content --></section>
 		`);
 	}
 }
@@ -43,9 +42,11 @@ class ContentItem {
 			.then(result => result.json())
 			.then(data => {
 				$('.hello-block').on('click', () => {
-					$('.hello-block').fadeToggle(200);
+					$('.hello-block').fadeToggle(500);
 					this.projects = [...data];
-					this.render(this.projects);
+					setTimeout(() => {
+						this.render(this.projects);
+					}, 500);
 				})
 			});
 	}
